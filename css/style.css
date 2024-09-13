@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+}
+.hero{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: linear-gradient(180deg , white ,#dca0dc );
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    /* border: 1px solid red; */
+    
+}
+header i{
+    color: #dca0dc;
+    cursor: pointer;
+}
+header .logo{
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header .logo h1{
+    font-family: "Orbitron", sans-serif;
+}
+header .logo p{
+    color: #ff9900;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.fles_hero{
+    display: flex;
+    width: 98%;
+    height: 80vh;
+    justify-content: space-around;
+    /* margin-top: 10vh; */
+}
+.first{
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.top_details{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    margin-top: 10%;
+    font-size: 30px;
+}
+.top_details p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 900;
+    margin-top: 10px;
+
+}
+.first .top_details .view{
+    width: 70%;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background: linear-gradient(90deg,white,#dca0dc);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.first .top_details .view span{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sample_divs{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 38%;
+    margin-top: 12%;
+}
+.sample_divs .card{
+    position: relative;
+    width: 32%;
+    height: 100%;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg,#ddd,#dca0dc);
+
+}
+.sample_divs .card img{
+    width: 90%;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 5%;
+
+}
+.sample_divs .card p{
+    font-size: 12px;
+    color: #000;
+}
+.sample_divs .card a{
+    font-size: 12px;
+    color: #000;
+    background-color: #dca0dc;
+    padding: 10px 20px ;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 900;
+
+}
+.second{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(0deg,#ddd,#dca0dc20);
+    /* border: 1px solid red; */
+    border-radius: 50px;
+}
+.second img{
+    width: 120%;
+    margin-left: 20%;
+    height: auto;
+}
+.second p{
+    font-size: 50px;
+
+}
+.second a{
+    font-size: 12px;
+    color: #000;
+    background-color: #dca0dc;
+    padding: 10px 20px ;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 900;
+
+}
+
+.chatbot{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background:linear-gradient(135deg,white , #dca0dc30 );
+    border: none;
+    border-radius: 10px;
+}
+.chatbot img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+@media (min-width: 350px) and (max-width: 900px){
+    .hero{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100dvh;
+        overflow: auto;
+        background: linear-gradient(180deg , white ,#dca0dc );
+    }
+    .fles_hero{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 120dvh;
+        justify-content: space-around;
+        /* margin-top: 10vh; */
+    }
+    .first{
+        width: 100%;
+    }
+    .sample_divs .card{
+        width: 48%;
+    }
+    .second{
+        width: 100%;
+    }
+    .second img{
+        width: 110%;
+        margin-left: 1%;
+        height: auto;
+    }
+}
